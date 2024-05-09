@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thế giới điện thoại</title>
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="style.css">
+
+<body>
+    <!--header-->
+    <div class="header">
+        <div class="container">
+            <a href="PhoneStore (1).html"><img class="logo" src="images/logosua.png" alt="PhoneStore Logo"></a>
+            <div class="search_box">
+                    <input class="search_box-txt" type="text" placeholder="Search here">
+                    <div class="search_box-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="PhoneStore (1).html">
+                    <i class="fa-sharp fa-solid fa-house"></i>
+                    TRANG CHỦ</a>
+                    </li>
+                    <li><a href="Thông-tin.html">
+                    <i class="fa-solid fa-circle-info"></i>
+                    THÔNG TIN</a>
+                    </li>
+                    <li><a href="Giỏ-hàng.html">
+                    <i class="fa-solid fa-cart-shopping"></i>   
+                    GIỎ HÀNG
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <!--end-->
+    <section>
+        <div class="chitietSanpham" style="margin-bottom: 100px">
+            <h1>Iphone 8 Plus</h1>
+            <div class="rating"></div>
+            <div class="rowdetail group">
+                <div class="picture">
+                    <img src="images/ip8.jpg" onclick="opencertain()">
+                </div>
+                <div class="price_sale">
+                    <div class="area_price">
+                        <strong>30.000.000đ</strong>
+                        <span>50.000.000đ</span>
+                    </div>
+                    <div class="ship">
+                        <img src="images/clock-152067_960_720.png">
+                        <div>NHẬN HÀNG TRONG 1 GIỜ</div>
+                    </div>
+                    <div class="area_promo">
+                        <strong>khuyến mãi</strong>
+                        <div class="promo">
+                            <img src="images/icon-tick.png">
+                            <div id="detailPromo">
+                                "Sản phẩm sẽ được giảm "
+                                <span style="font-weight: bold;">5.000.000đ</span>
+                                "đ khi mua hàng online bằng VNPay hoặc tin nhắn SMS"
+                            </div>
+                        </div>
+                    </div>
+                    <div class="policy">
+                        <div>
+                            <img src="images/box.png">
+                            <p>Trong hộp có: Sạc, Tai nghe, Sách hướng dẫn, Cây lấy sim, Ốp lưng </p>
+                        </div>
+                        <div>
+                            <img src="images/icon-baohanh.png">
+                            <p>Bảo hành chính hãng 12 tháng.</p>
+                        </div>
+                        <div class="last">
+                            <img src="images/1-1.jpg">
+                            <p>1 đổi 1 trong 1 tháng nếu lỗi, đổi sản phẩm tại nhà trong 1 ngày.</p>
+                        </div>
+                    </div>
+                    <div class="area_order">
+                        <a class="buy_now" onclick="themVaoGioHang(maProduct, nameProduct);">
+                            <b><i class="fa fa-cart-plus"></i> Thêm vào giỏ hàng</b>
+                            <p>Giao trong 1 giờ hoặc nhận tại cửa hàng</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="info_product">
+                    <h2>Thông số kỹ thuật</h2>
+                    <ul class="info">
+                        <li>
+                            <p>Kích thước màn hình</p>
+                            <div>6.7 inches</div>
+                        </li>
+                        <li>
+                            <p>Hệ điều hành</p>
+                            <div>IOS 16</div>
+                        </li>
+                        <li>
+                            <p>Pin</p>
+                            <div>4.1352mAh</div>
+                        </li>
+                        <li>
+                            <p>Trọng lượng</p>
+                            <div>240 gr</div>
+                        </li>
+                        <li>
+                            <p>Công nghệ màn hình</p>
+                            <div>Super Rentina XDR OLED</div>
+                        </li>
+                        <li>
+                            <p>Camera sau</p>
+                        </li>
+                        <li>
+                            <p>Camera trước</p>
+                        </li>
+                        <li>
+                            <p>Chipset</p>
+                            <div>Apple A16 Bionic 6-Core</div>
+                        </li>
+                        <li>
+                            <p>Dung lượng RAM</p>
+                            <div>6 GB</div>
+                        </li>
+                        <li>
+                            <p>Bộ nhớ trong</p>
+                            <div>512 GB</div>
+                        </li>
+                        <li>
+                            <p>Thẻ SIM</p>
+                            <div>2 SIM(nano-SIM và eSIM</div>
+                        </li>
+                        <li>
+                            <p>Tính năng màn hình</p>
+                            <div>ProMotion 120Hz</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clear"> </div>
+        <div id="goiysanpham">
+            <div class="khungsanpham" style="border-color: #434aa8;">
+                <h3 class="tenkhung" style="background-image:linear-gradient(120deg, #434aa8 0%, #ec1f1f 50%, #434aa8 100%); clear: both;">*Sản phẩm tương tự*</h3>
+                <div class="sanphamtrongkhung flexcontain">
+                    <li class="sanpham">
+                        <a href="">
+                            <img src="images/flip3.jpg" alt="">
+                            <h3>Samsung Galaxy Z Flip3 5G</h3>
+                            <div class="price">
+                                <strong>15.490.000đ</strong>
+                                <span>24.490.000đ</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sanpham">
+                        <a href="">
+                            <img src="images/s20ultra.jpg" alt="">
+                            <h3>Galaxy S20 Ultra</h3>
+                            <div class="price">
+                                <strong>13.590.000đ</strong>
+                                <span>19.990.000đ</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sanpham">
+                        <a href="">
+                            <img src="images/S205G.jpg" alt="">
+                            <h3>Galaxy S20 5G 12GB</h3>
+                            <div class="price">
+                                <strong>6.990.000đ</strong>
+                                <span>8.290.000đ</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sanpham">
+                        <a href="">
+                            <img src="images/poco.jpg" alt="">
+                            <h3>Xiaomi POCO X3 NFC</h3>
+                            <div class="price">
+                                <strong>5.290.000đ</strong>
+                                <span>5.650.000đ</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sanpham">
+                        <a href="">
+                            <img src="images/fold3.jpg" alt="">
+                            <h3>Galaxy Z Fold 3 5G</h3>
+                            <div class="price">
+                                <strong>22,990,000đ</strong>
+                                <span>25.490.000đ</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sanpham">
+                        <a href="">
+                            <img src="images/live4.jpg" alt="">
+                            <h3>Vsmart Live 4</h3>
+                            <div class="price">
+                                <strong>4,399,000đ</strong>
+                                <span>5.000.000đ</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sanpham">
+                        <a href="">
+                            <img src="images/note9.jpg" alt="">
+                            <h3>Samsung GALAXY NOTE 9</h3>
+                            <div class="price">
+                                <strong>5.700.000đ</strong>
+                                <span>22.990.000đ</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sanpham">
+                        <a href="">
+                            <img src="images/note10.jpg" alt="">
+                            <h3>Samsung Galaxy Note 10</h3>
+                            <div class="price">
+                                <strong>8.990.000đ</strong>
+                                <span>10.990.000đ</span>
+                            </div>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <div class="grid">
+        <div class="grid_row">
+            <div class="column">
+                <h3 class="footer_title">Chăm sóc khách hàng</h3>
+                <a href=""><li>Trung tâm trợ giúp</li></a>
+                <a href=""><li>Hướng dẫn mua hàng </li></a>
+                <a href=""><li>Hướng dẫn đổi trả</li></a>
+            </div>
+            <div class="column">
+                <h3 class="footer_title">Cơ sở</h3>
+                <a href=""><li>Cs1: 3 Cầu Giấy, Đống Đa, Hà Nội</li></a>
+                <a href=""><li>Cs2: 450 Lê Văn Kiệt, Quận 9, Thành phố Hồ Chí Minh </li></a>
+            </div>
+            <div class="column">
+                <h3 class="footer_title">Tổng đài hỗ trợ </h3>
+                <p> <i class="fa-solid fa-phone"></i> 0000.1234</p>
+            </div>
+            <div class="column">
+                <h3 class="footer_title">Theo dõi chúng tôi</h3>
+                
+                <a href="https://www.facebook.com/"><li><i class="fa-brands fa-facebook" style="color: rgb(61, 61, 218);"></i> Facebook</li></a>
+                <a href="https://www.instagram.com/"><li><i class="fa-brands fa-instagram" style="color: rgb(239, 42, 75)"></i> Instagram</li></a>
+                <a href="https://www.youtube.com/"><li> <i class="fa-brands fa-youtube" style="color: red;"></i> Youtube</li></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

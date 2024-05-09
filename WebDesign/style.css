@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body,
+html {
+    min-width: 1024px;
+    margin: 0 auto;
+}
+/*header*/
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    height: 60px;
+    background-color: rgb(122, 228, 245);
+    /* position: relative; */
+    top:0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    margin-right: 0px;
+}
+.logo {
+    width: 150;
+    height: 60px;
+    position: absolute;
+}
+/* search */
+.search_box {
+    padding: 5px 10px;
+    background: #fff;
+    margin-top: 13.5px;
+    margin-left: 300px;
+    display: inline-block;
+    border-radius: 2px;
+}
+.search_box-txt {
+    width: 400px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.search_box input{
+    border: none;
+}
+.search_box-icon {
+    display: inline-block;
+    padding-top: 2px;
+}
+.icon_search{
+    cursor: pointer;
+}
+.nav{
+    display: flex;
+    float: right;
+}
+.nav li {
+    display: inline-block;
+}
+.nav li a {
+    color: #000;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 15px;
+    border-left: 1px solid #333;
+}
+.nav li:hover a {
+    color: #fff;
+}
+/*end*/
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+.clear {
+    clear: both;
+    line-height: 0;
+}
+
+/* căn giữa section, và set độ rộng lón nhất  1200px */
+section {
+    max-width: 1205px;
+    margin: 0 auto;
+    margin-top: 60px;
+} 
+
+hr {
+    color: #ddd;
+    background-color: #ddd;
+    border-top: 1px solid #ddd;
+}
+.chitietsanpham{
+    display: block;
+    height: auto;
+    margin-bottom: 100px;
+}
+.chitietSanpham h1 {
+    display: block;
+    margin: 0 0 0 10px;
+    float: left;
+    /* không chứa dủ chữ sẽ giấu đi */
+    overflow: hidden;
+    font-size: 24px;
+    color: #333;
+    line-height: 40px;
+}
+
+.rowdetail {
+    display: block;
+    border-top: 1px solid #e5e5e5;
+    padding: 15px 0;
+    margin-top: 5px;
+    clear: both;
+}
+.picture {
+    float: left;
+    overflow: hidden;
+    width: 33%;
+    position: relative;
+    /*định vị trí phụ thuộc vào thành phần bao ngoài*/
+    display: block;
+}
+
+.picture img {
+    display: block;
+    height: auto;
+    margin: auto;
+    cursor: pointer;
+    /*thay đổi trỏ chuột khi đưa vào*/
+    max-width: 100%;
+}
+
+.price_sale {
+    float: left;
+    position: relative;
+    width: 33%;
+    display: block;
+}
+
+.area_price {
+    display: block;
+    overflow: hidden;
+    line-height: 20px;
+    padding: 0 10px 10px;
+}
+
+.area_price strong {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 24px;
+    color: #e10c00;
+    vertical-align: middle;
+    /*thành phần sẽ dc bao giữa theo thành phần bao ngoài*/
+    margin-right: 10px;
+}
+
+.area_price span {
+    /* giá tiền gạch*/
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    text-decoration: line-through;
+    margin-left: 5px;
+    color: #222;
+}
+.ship {
+    background-color: #ecf7ed;
+    border-radius: 3px;
+    border: 1px solid #c4ddc8;
+    margin: 5px 10px 10px;
+    padding: 0 10px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.ship img {
+    width: 19px;
+    height: 21px;
+    margin: 4px 10px 0 0;
+    float: left;
+}
+
+.ship div {
+    border-left: 1px solid #c4ddc8;
+    display: block;
+    line-height: 30px;
+    padding-left: 10px;
+    margin-left: 28px;
+    color: #30a43b;
+    max-width: 1200px;
+}
+
+.area_promo {
+    border: 1px solid #ddd;
+    display: block;
+    overflow: hidden;
+    border-radius: 4px;
+    position: relative;
+    margin: 5px 10px 12px;
+    padding-bottom: 10px;
+}
+
+.area_promo strong {
+    display: block;
+    overflow: hidden;
+    font-size: 15px;
+    padding: 15px 15px 10px 15px;
+    text-transform: uppercase;
+    /*Viáº¿t thÃ nh chá»¯ hoa*/
+}
+
+.area_promo .promo {
+    display: block;
+    overflow: hidden;
+    font-size: 14px;
+    padding: 0 15px 5px 40px;
+}
+
+.promo img {
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin: 2px 0 0 -20px;
+}
+
+.area_order {
+    display: block;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.area_order .buy_now {
+    display: block;
+    overflow: hidden;
+    padding: 7px 0;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: normal;
+    color: #fff;
+    text-align: center;
+    background: -webkit-linear-gradient(top, #f59000, #fd6e1d);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.area_order .buy_now:hover {
+    background: -webkit-linear-gradient(top, #fd6e1d, #f59000);
+}
+
+.area_order .buy_now p {
+    display: block;
+    font-size: 13px;
+    margin: 3px 0;
+}
+/* chính sách */
+.policy {
+    display: block;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding-top: 10px;
+    margin: 0 10px 10px 10px;
+    padding-bottom: 5px;
+}
+
+.policy div {
+    display: block;
+    overflow: hidden;
+    padding: 5px 0 5px 5px;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 10px;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+}
+
+.policy div img {
+    background: #fff;
+    display: block;
+    width: 20px;
+    height: 17px;
+    float: left;
+    margin: 3px;
+}
+
+.policy div p {
+    margin: 0 0 0 28px;
+    color: #288ad6;
+}
+
+.policy div.last {
+    border-bottom: 0px;
+}
+
+.info_product {
+    width: 33%;
+    border: 1px solid #ddd;
+    float: left;
+    border-radius: 3px;
+    display: block;
+}
+
+.info_product h2 {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.info {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 0 5px;
+}
+
+.info li {
+    list-style: none;
+    display: table;
+    border-top: 1px solid #eee;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.info li p {
+    clear: both;
+    float: left;
+    margin: 5px 0;
+    width: 40%;
+    color: #666;
+}
+
+.info li div {
+    width: 60%;
+    float: left;
+    margin: 5px 0;
+    color: #333;
+}
+.clear{
+    clear: both;
+}
+.khungsanpham{
+    width: 100%;
+    margin: 50px 0;
+    border-radius: 5px;
+    border: 2px solid #ff4d00;
+    box-sizing: border-box;
+}
+.tenkhung{
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.5em;
+    font-size: 1.5em;
+    border-radius: 1em;
+    color: white;
+    transform: translateY(-0.75em);
+}
+.khungsanpham li{
+    list-style-type: none;
+}
+.sanphamtrongkhung h3:hover{
+    color: #e10c00;
+}
+.sanpham{
+    width: 238px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+}
+.flexcontain{
+    display: -webkit-box;
+    justify-content: center;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+}
+.sanphamtrongkhung li:hover img{
+    transform: scale(1.1);
+}
+.sanpham a img{
+    display: block;
+    margin: 15px auto;
+    transition-duration: 0.2s;
+    width: 200px;
+    height: 200px;
+}
+.sanpham h3{
+    display: block;
+    padding: 0 10px;
+    color: #333;
+    line-height: 1.3em;
+    font-size: 15px;
+    font-weight: normal;
+}
+.sanpham .price{
+    display: block;
+    padding: 5px 10px 0px 10px;
+}
+.sanpham strong{
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    font-size: 14px;
+    color: #e10c00;
+    line-height: 15px;
+}
+.price span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    text-decoration: line-through;
+    margin-left: 5px;
+    color: #222;
+}
+.listsptrongkhung flexcontain{
+    display: flex;
+}
+/* footer */
+.grid {
+    padding-top: 15px;
+}
+.column {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 25%;
+}
+.grid_row{
+    display: flex;
+    float: left;
+    background: #ccc;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.column a{
+    text-decoration:none;
+    list-style: none;
+    color: #000;
+}
+.column a li{
+    line-height: 25px;
+}
+.column p {
+    color: red;
+}
+.footer_title {
+    padding-bottom: 5px;
+}
